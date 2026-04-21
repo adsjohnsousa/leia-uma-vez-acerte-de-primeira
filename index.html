@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prof. Dr. Murillo Cesar</title>
+  <title>Prof. Dr. Murillo César</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -28,7 +28,6 @@
       overflow-x: hidden;
     }
 
-    /* Background texture */
     body::before {
       content: '';
       position: fixed;
@@ -48,7 +47,7 @@
       z-index: 1;
     }
 
-    /* ── FOTO ── */
+    /* FOTO */
     .photo-wrap {
       display: flex;
       justify-content: center;
@@ -89,7 +88,7 @@
       filter: grayscale(20%) contrast(1.05);
     }
 
-    /* ── HEADER ── */
+    /* HEADER */
     .header {
       text-align: center;
       margin-bottom: 36px;
@@ -137,7 +136,7 @@
       line-height: 1.6;
     }
 
-    /* ── SECTION TITLE ── */
+    /* SECTION LABEL */
     .section-label {
       font-size: 10px;
       font-weight: 600;
@@ -161,80 +160,160 @@
     .section-label::before { left: 0; }
     .section-label::after { right: 0; transform: scaleX(-1); }
 
-/* ── BUTTONS ── */
-/* ── BUTTONS ── */
-.btn-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 28px;
-}
+    /* BUTTONS */
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
 
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 28px;
-  border-radius: 4px;
-  border: none;
-  background: linear-gradient(90deg, #6B4E0A, #C8A22A, #F0D060, #C8A22A);
-  background-size: 200% auto;
-  color: #080705;
-  text-decoration: none;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-position .4s ease, transform .2s ease, box-shadow .2s ease;
-  animation: fadeUp 0.6s ease both;
-}
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 28px;
+      border-radius: 4px;
+      border: none;
+      background: linear-gradient(90deg, #3a2800, #C8A22A, #F0D060, #C8A22A);
+      background-size: 200% auto;
+      color: #080705;
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-position .4s ease, transform .2s ease, box-shadow .2s ease;
+      animation: fadeUp 0.6s ease both;
+    }
 
-.btn:hover {
-  background-position: right center;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(200,162,42,0.25);
-}
+    .btn:hover {
+      background-position: right center;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200,162,42,0.25);
+    }
 
-.btn .btn-icon {
-  font-size: 16px;
-  opacity: 0.6;
-  transition: opacity .3s, transform .3s;
-}
+    .btn .btn-icon {
+      font-size: 16px;
+      opacity: 0.6;
+      transition: opacity .3s, transform .3s;
+    }
 
-.btn:hover .btn-icon {
-  opacity: 1;
-  transform: translateX(4px);
-}
+    .btn:hover .btn-icon {
+      opacity: 1;
+      transform: translateX(4px);
+    }
 
-.btn-gold {
-  background: linear-gradient(90deg, #3a2800, #C8A22A, #F0D060, #C8A22A);
-  background-size: 200% auto;
-}
+    .btn-wa {
+      background: linear-gradient(90deg, #075e3a, #25D366, #6ef7a7, #25D366);
+      background-size: 200% auto;
+      color: #080705;
+    }
 
-.btn-wa {
-  background: linear-gradient(90deg, #075e3a, #25D366, #6ef7a7, #25D366);
-  background-size: 200% auto;
-  color: #080705;
-}
+    .btn-wa:hover {
+      box-shadow: 0 8px 24px rgba(37,211,102,0.2);
+    }
 
-.btn-wa:hover {
-  box-shadow: 0 8px 24px rgba(37,211,102,0.2);
-}
+    .btn-wa .btn-icon { opacity: 1; }
 
-.btn-wa .btn-icon { opacity: 1; }
+    .btn:nth-child(1) { animation-delay: 0.2s; }
+    .btn:nth-child(2) { animation-delay: 0.3s; }
+    .btn:nth-child(3) { animation-delay: 0.4s; }
+    .btn:nth-child(4) { animation-delay: 0.5s; }
+    .btn:nth-child(5) { animation-delay: 0.6s; }
+    .btn:nth-child(6) { animation-delay: 0.7s; }
 
-.btn:nth-child(1) { animation-delay: 0.2s; }
-.btn:nth-child(2) { animation-delay: 0.3s; }
-.btn:nth-child(3) { animation-delay: 0.4s; }
-.btn:nth-child(4) { animation-delay: 0.5s; }
-.btn:nth-child(5) { animation-delay: 0.6s; }
-.btn:nth-child(6) { animation-delay: 0.7s; }
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      margin-top: 48px;
+      animation: fadeUp 1s ease 0.8s both;
+    }
+
+    .footer .gold-line {
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 16px;
+    }
+
+    .footer p {
+      font-size: 11px;
+      letter-spacing: .14em;
+      color: var(--goldd);
+      text-transform: uppercase;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Foto -->
+    <div class="photo-wrap">
+      <div class="photo-ring">
+        <img src="murillo.jpeg" alt="Prof. Dr. Murillo César">
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <p class="label">Professor &amp; Especialista em Concursos</p>
+      <h1>Murillo César<span>Prof. Dr.</span></h1>
+      <div class="divider"></div>
+      <p class="bio">Português para concursos públicos.<br>Do zero à aprovação.</p>
+    </div>
+
+    <!-- Produtos -->
+    <p class="section-label">Produtos</p>
+    <div class="btn-group">
+      <a href="/leia-uma-vez-acerte-na-primeira" class="btn">
+        <span>Leia uma vez, acerte na primeira</span>
+        <span class="btn-icon">→</span>
+      </a>
+      <a href="/guia-da-leitura-certeira" class="btn">
+        <span>Guia da Leitura Certeira</span>
+        <span class="btn-icon">→</span>
+      </a>
+      <a href="/guia-estrategico-das-bancas" class="btn">
+        <span>Guia Estratégico das Bancas</span>
+        <span class="btn-icon">→</span>
+      </a>
+      <a href="/portugues-do-zero-a-aprovacao" class="btn">
+        <span>Português do Zero à Aprovação</span>
+        <span class="btn-icon">→</span>
+      </a>
+    </div>
+
+    <!-- WhatsApp -->
+    <p class="section-label">Fale Comigo</p>
+    <div class="btn-group">
+      <a href="https://wa.me/5573981120360?text=Ol%C3%A1%20professor%20Murillo%2C%20queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20mentoria%20individual" target="_blank" class="btn btn-wa">
+        <span>Mentoria Individual</span>
+        <span class="btn-icon">📲</span>
+      </a>
+      <a href="https://wa.me/5573981120360?text=Ol%C3%A1%20professor%20Murillo%2C%20estou%20com%20d%C3%BAvida%20sobre%20um%20de%20seus%20produtos" target="_blank" class="btn btn-wa">
+        <span>Suporte / Dúvidas</span>
+        <span class="btn-icon">📲</span>
+      </a>
+    </div>
+
     <!-- Footer -->
     <div class="footer">
       <div class="gold-line"></div>
-      <p>© 2026 · Prof. Dr. Murillo Cesar</p>
+      <p>© 2026 · Prof. Dr. Murillo César</p>
     </div>
 
   </div>
